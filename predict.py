@@ -5,8 +5,6 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.utils import to_categorical
 
-model = load_model("model.h5")
-
 with open("labels.txt", "r", encoding="utf-8") as file:
     labels = file.read().splitlines()
 
